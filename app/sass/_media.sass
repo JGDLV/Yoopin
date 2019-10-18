@@ -1,0 +1,287 @@
+@media (max-width: 1400px)
+  .intro-slider
+    padding: 0 90px
+
+    & .slick-arrow
+      width: 50px
+      height: 50px
+
+    & .slick-prev
+      left: 0
+
+    & .slick-next
+      right: 0
+
+@media (max-width: 1200px)
+  .intro
+    padding-top: 40px
+
+    &__header
+      font-size: 40px
+      line-height: normal
+
+  .signature
+    padding: 40px 0
+
+    &-inner
+      justify-content: space-around
+      align-items: center
+
+    &__text-block
+      margin: 0 0 30px
+
+    &__image-block
+      margin: 0
+
+  h2
+    font-size: 30px !important
+    line-height: normal !important
+
+  .news
+    padding: 40px 0
+
+    &__item
+      height: 250px
+
+      &-text
+        padding: 0 20px
+
+  .products
+    padding: 40px 0
+
+    &__item
+      padding: 0
+
+      &-text-block
+        padding-left: 0
+
+  .video
+    padding: 40px 0
+
+  .main-footer
+    padding-top: 30px
+
+  .main-footer-top__right
+    width: auto
+
+  .footer-menu-block
+    margin-right: 30px
+
+@media (max-width: 1240px)
+  .welcome
+    margin: 40px 0 0
+
+    &__item
+      border: 0 !important
+
+@media (max-width: 1100px)
+  .news-items
+    justify-content: center
+
+  .news__item
+    width: 50%
+
+@media (max-width: 1000px)
+  .main-header-inner
+    justify-content: center
+
+    > *
+      margin: 10px 20px
+
+  .logo
+    order: 0
+
+  .social
+    order: 1
+
+  .main-menu-block
+    order: 2
+
+  .main-menu
+    justify-content: center
+
+  .main-menu__link
+    padding: 5px 10px
+    display: block
+    font-size: 18px
+
+  .products__item
+    flex-direction: column-reverse
+
+    &-text-block
+      width: 100%
+      padding: 0
+
+@media (max-width: 850px)
+  .main-footer-top
+    padding-bottom: 40px
+
+    &__left
+      width: 100%
+      text-align: center
+
+    &__text
+      max-width: 100%
+
+    &__right
+      width: 100%
+      padding-top: 40px
+      justify-content: center
+
+  .footer-social-items
+    justify-content: center
+
+@media (max-width: 750px)
+  .news__item
+    width: 100%
+
+@media (max-width: 700px)
+  .welcome__item
+    width: 50%
+    flex-grow: 1
+    margin-bottom: 30px
+
+    &-text
+      max-width: 100%
+
+    &:last-child
+      margin-bottom: 0
+
+@media (max-width: 580px)
+  .main-header
+    position: relative
+
+    &-inner
+      justify-content: flex-start
+
+  .intro__header
+    font-size: 30px
+
+  .intro__slide-text
+    font-size: 18px
+    line-height: normal
+
+  .logo, .social
+    // width: 100%
+    margin: 7px 0
+    // padding: 0 10px
+
+  .logo
+    margin-right: 30px
+
+  .menu-toggle
+    position: absolute
+    display: flex
+    width: 50px !important
+    height: 47px
+    top: 50%
+    // top: 32px
+    right: 32px
+    margin: 0
+    padding: 0
+    transform: translateY(-50%)
+    background: #000
+    z-index: 50
+
+  .main-menu
+    flex-direction: column
+
+    &-block
+      position: absolute
+      margin: 0 !important
+      top: 0
+      left: 0
+      left: -100%
+      z-index: 30
+      background: linear-gradient(to right, #111, #000)
+      transition: .3s ease
+      width: calc(100% - 114px)
+      box-shadow: 0 0 30px #000
+
+      &.active
+        left: 0
+
+    &__item
+      margin: 0
+      border-bottom: 1px solid #222
+      border-right: 1px solid #111
+
+    &__link
+      font-size: 18px
+      padding: 15px 20px
+      text-align: center
+
+  .signature__text-block
+    padding: 20px
+
+    &::before, &::after
+      content: none
+
+  .products__item
+    width: 100%
+    text-align: center
+
+    &-image-block
+      margin: auto
+
+    &-button
+      margin: auto
+
+  .main-footer-bottom
+    line-height: normal
+    padding: 15px 0
+
+    &-inner
+      justify-content: center
+
+  .main-footer-copyright__text
+    width: 100%
+    text-align: center
+    line-height: normal
+    margin-bottom: 15px
+
+@media (max-width: 520px)
+  .intro-slider
+    padding: 70px 0 0
+
+  .intro-slider .slick-arrow
+    top: 20px
+    transform: none
+
+  .intro-slider .slick-prev
+    left: calc(50% - 50px)
+
+  .intro-slider .slick-next
+    right: calc(50% - 50px)
+
+  .welcome__item
+    width: 100%
+
+@media (max-width: 450px)
+  .main-header
+    padding: 10px 0
+
+  .logo__image
+    width: 100px
+
+  .menu-toggle
+    right: 15px
+
+  .social
+    padding: 15px 0
+
+    &-items
+      justify-content: center
+
+@media (max-width: 400px)
+  .signature__text-block
+    font-size: 18px
+    line-height: 1.8
+
+  .news__item
+    height: 250px
+
+  .footer-menu-block
+    width: 100%
+    margin: 0 0 30px
+    text-align: center
