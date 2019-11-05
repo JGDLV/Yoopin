@@ -316,16 +316,13 @@ body.stickytop {
   background-color: #df4507;
   border-radius: 50%;
   text-align: center;
-}
-
-.social__link:hover i {
-  color: #FFF;
-}
-
-.social__link i {
   font-size: 12px;
   line-height: 25px;
   color: #000;
+}
+
+.social__link:hover {
+  color: #FFF;
 }
 
 .intro {
@@ -802,9 +799,6 @@ h2 span {
 #top {
   background: #FFF;
   text-align: center;
-}
-
-#top i {
   font-size: 24px;
   line-height: 50px;
   color: #000;
