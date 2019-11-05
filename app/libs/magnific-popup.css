@@ -140,9 +140,11 @@ button::-moz-focus-inner {
   .mfp-close:hover,
   .mfp-close:focus {
     opacity: 1; }
+  .mfp-close:active {
+    top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
-  color: transparent; }
+  color: #333; }
 
 .mfp-image-holder .mfp-close,
 .mfp-iframe-holder .mfp-close {
@@ -294,36 +296,6 @@ img.mfp-img {
 
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
-
-  .mfp-fade.mfp-bg {
-    opacity: 0;
-    -webkit-transition: all 0.15s ease-out;
-    -o-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out;
-  }
-  
-  .mfp-fade.mfp-bg.mfp-ready {
-    opacity: 0.8;
-  }
-  
-  .mfp-fade.mfp-bg.mfp-removing {
-    opacity: 0;
-  }
-  
-  .mfp-fade.mfp-wrap .mfp-content {
-    opacity: 0;
-    -webkit-transition: all 0.15s ease-out;
-    -o-transition: all 0.15s ease-out;
-    transition: all 0.15s ease-out;
-  }
-  
-  .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-    opacity: 1;
-  }
-  
-  .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-    opacity: 0;
-  }
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
   /**
