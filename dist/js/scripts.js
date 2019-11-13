@@ -54,4 +54,15 @@ $(document).ready(function () {
     nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
   });
 
+  wow = new WOW(
+    {
+      boxClass: 'wow',
+      animateClass: 'animated',
+      offset: 0,
+      mobile: true,
+      live: true
+    }
+  )
+  wow.init();
+
 });
