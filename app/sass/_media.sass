@@ -100,10 +100,13 @@
   .main-menu
     justify-content: center
 
-  .main-menu__link
-    padding: 5px 10px
-    display: block
-    font-size: 18px
+    &__link
+      padding: 5px 10px
+      display: block
+      font-size: 18px
+
+      &::before
+        left: 10px
 
   .products__item
     flex-direction: column-reverse
@@ -180,7 +183,7 @@
     margin: 0
     padding: 0
     transform: translateY(-50%)
-    background: #000
+    background: #000000
     z-index: 50
 
   .main-menu
@@ -189,22 +192,25 @@
     &-block
       position: absolute
       margin: 0 !important
-      top: 0
+      // top: 0
+      top: 100%
       left: 0
       left: -100%
       z-index: 30
-      background: linear-gradient(to right, #111, #000)
+      // background: linear-gradient(to right, #111, #000)
+      background: #000000
       transition: .3s ease
-      width: calc(100% - 114px)
-      box-shadow: 0 0 30px #000
+      // width: calc(100% - 114px)
+      width: 100%
+      box-shadow: 0 0 30px #000000
 
       &.active
         left: 0
 
     &__item
       margin: 0
-      border-bottom: 1px solid #222
-      border-right: 1px solid #111
+      border-bottom: 1px solid #222222
+      border-right: 1px solid #111111
 
     &__link
       font-size: 18px

@@ -9,7 +9,7 @@ $orange: #df4507
 body
   font-family: "Open Sans", sans-serif
   background: url("../img/bg.png")
-  color: #FFF
+  color: #ffffff
   font-size: 15px
   line-height: 1.6
   @include body
@@ -33,7 +33,7 @@ body
   padding: 0 15px
 
 .main-header
-  background: #000
+  background: #000000
   padding: 20px 0
 
   &.stickytop
@@ -68,7 +68,7 @@ body
     color: #ffffff
     font-size: 20px
 
-    &:hover
+    &::before
       color: $orange
 
 .social
@@ -93,12 +93,15 @@ body
     line-height: 25px
     color: #000
 
-    &:hover
-      color: #FFF
+    &:hover::before
+      color: #ffffff
+
+    &::after
+      background: #ffffff
 
 .intro
   background: url("../img/intro-bg.png") top center no-repeat
-  color: #FFF
+  color: #ffffff
   padding: 100px 0 0
 
   &__header
@@ -116,13 +119,16 @@ body
       height: 80px
       background-color: #ffffff
       top: 99px
+      font-size: 20px
+      color: #000000
+      // border-radius: 50%
+
+      &::after
+        background: #ffffff
+        border-radius: 0
 
       &:hover
         background: $orange
-
-      i
-        font-size: 20px
-        color: #000
 
     .slick-prev
       left: -116px
@@ -155,9 +161,11 @@ body
       color: #000000
       margin-right: 48px
 
-      &:hover
+      &::before, &::after
         background: $orange
-        color: #FFF
+
+      &:hover
+        color: #ffffff
 
       &:last-child
         margin-right: 0
@@ -188,8 +196,8 @@ body
     padding: 0 10px
 
     &:nth-child(2)
-      border-left: 1px solid #FFF
-      border-right: 1px solid #FFF
+      border-left: 1px solid #ffffff
+      border-right: 1px solid #ffffff
 
     &-image-block
       margin-bottom: 27px
@@ -298,7 +306,7 @@ h2
       text-align: center
       padding-top: 28px
       overflow: hidden
-      transition: .3s linear
+      transition: .5s ease
 
     &-header
       color: #ffa784
@@ -317,8 +325,10 @@ h2
       margin: 0 auto
       color: #ffffff
 
+      &::before, &::after
+        background: #ffffff
+
       &:hover
-        background: #FFF
         color: $orange
 
     &:hover &-text-block
@@ -356,7 +366,7 @@ h2
       font-weight: 700
       line-height: 36px
       text-transform: uppercase
-      border-bottom: 1px solid #FFF
+      border-bottom: 1px solid #ffffff
       padding-bottom: 7px
       margin-bottom: 21px
 
@@ -364,13 +374,16 @@ h2
       margin-bottom: 30px
 
     &-button
-      background-color: #FFF
+      background-color: #ffffff
       color: #2d2d2d
 
+      &::before, &::after
+        background: $orange
+        border-radius: 5px
+
       &:hover
-        background: none
-        box-shadow: 0 0 0 1px #FFF
-        color: #FFF
+        box-shadow: 0 0 0 1px #ffffff
+        color: #ffffff
 
     &-image-block
       width: 202px
@@ -426,11 +439,14 @@ h2
     border-radius: 10px
 
 #top
-  background: #FFF
+  background: #ffffff
   text-align: center
-  font-size: 24px
+  font-size: 20px
   line-height: 50px
-  color: #000
+  color: #000000
+
+  &::after
+    background: $orange
 
 .main-footer
   padding: 59px 0 0
@@ -469,7 +485,7 @@ h2
     padding-top: 14px
 
   &-bottom
-    background: #000
+    background: #000000
     line-height: 77px
 
     &-inner
@@ -494,10 +510,13 @@ h2
     margin-bottom: 6px
 
   &__link
-    color: #FFF
+    color: #ffffff
 
     &:hover
       color: $orange
+
+    &::after, &:hover::before
+      background: $orange
 
   &__text
     line-height: 30px
@@ -515,7 +534,7 @@ h2
       margin-right: 0
 
     i
-      color: #FFF
+      color: #ffffff
       margin-right: 7px
 
   &__link
@@ -523,7 +542,7 @@ h2
     align-items: center
     width: 60px
     height: 28px
-    color: #FFF
+    color: #ffffff
     padding-left: 11px
 
     &_01
